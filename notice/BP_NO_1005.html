@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>공지수정 &lt; 공지사항 &lt; Partner Portal</title>
+
+<link rel="stylesheet" href="/resource_bp/css/style.css">
+<script src="/resource_bp/js/script.js"></script>
+<script src="/resource_bp/js/common.js"></script>
+</head>
+<body>
+<!-- //Popup size : 876x760 -->
+<div id="pop_wrap">
+	<div id="pop_head">
+		<strong>게시글 수정하기</strong>
+		<a href="#" class="close" onclick="javascript:close_layer();">닫기</a>
+	</div><!-- //Header -->
+	<div id="pop_container">
+
+		<div class="tbl_opt ontxt">
+			<div class="fl">
+				<p class="txt_point"><span>*</span> 항목은 필수 입력 항목 입니다.</p>
+			</div>
+		</div><!-- //Table Option -->
+
+		<div class="tbl_wrap">
+			<form action="#" method="post">
+			<!-- 
+			Hidden Form
+			text_bold : 텍스트 볼드처리 boolean
+			text_color : 텍스트 컬러값
+			-->
+			<input type="hidden" name="text_bold">
+			<input type="hidden" name="text_color" id="color_value" value="ffffff">
+				<table class="tbl_write">
+					<caption></caption>
+					<colgroup>
+						<col style="width:120px;" />
+						<col />
+					</colgroup>
+					<tbody>
+					<tr>
+						<th scope="row"><span class="point">분류/속성</span></th>
+						<td>
+							<select class="w260">
+								<option value="">###</option>
+							</select>
+							<input type="checkbox" name="" id="cate02" /><label for="cate02">중요</label>
+							<input type="checkbox" name="" id="cate03" /><label for="cate03">목록의 최상위에 게시</label>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><span class="point">제목</span></th>
+						<td>
+							<div class="in_ext">
+								<input type="text" data-text-deco="deco" placeholder="제목을 입력해주세요." value="Partner On Site 이용 관련 문의" />
+								<span class="ext">
+									<a href="#" class="txt_bold" data-text-bold="deco">볼드</a>
+									<a href="#" class="txt_color" data-text-color="deco"><span>가</span></a>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="vt"><span>게시 대상</span></th>
+						<td>
+							<input type="checkbox" name="" id="full_public" /><label for="full_public">전체 공개</label>
+							<p class="desc red02">전체 공개 설정 시 로그인 전에도 게시글을 확인할 수 있음</p>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="vt"><span>게시 기간</span></th>
+						<td>
+							<div class="start_date">
+								<input type="checkbox" name="" id="post01" /><label for="post01">게시 시작일</label>
+								<div class="date_opt">
+									<p><input type="text" id="post_start" readonly="readonly" /></p>
+									<select class="w70">
+										<option value="">01</option>
+										<option value="">02</option>
+										<option value="">03</option>
+										<option value="">04</option>
+										<option value="">05</option>
+										<option value="">06</option>
+										<option value="">07</option>
+										<option value="">08</option>
+										<option value="">09</option>
+										<option value="">10</option>
+										<option value="">11</option>
+										<option value="">12</option>
+										<option value="">13</option>
+										<option value="">14</option>
+										<option value="">15</option>
+										<option value="">16</option>
+										<option value="">17</option>
+										<option value="">18</option>
+										<option value="">19</option>
+										<option value="">20</option>
+										<option value="">21</option>
+										<option value="">22</option>
+										<option value="">23</option>
+										<option value="">00</option>
+									</select>
+									<select class="w70">
+										<option value="">00</option>
+										<option value="">10</option>
+										<option value="">20</option>
+										<option value="">30</option>
+										<option value="">40</option>
+										<option value="">50</option>
+									</select>
+								</div>
+							</div>
+							<div class="end_date">
+								<input type="checkbox" name="" id="post02" /><label for="post02">게시 종료일</label>
+								<div class="date_opt">
+									<p><input type="text" id="post_end" readonly="readonly" /></p>
+									<select class="w70">
+										<option value="">01</option>
+										<option value="">02</option>
+										<option value="">03</option>
+										<option value="">04</option>
+										<option value="">05</option>
+										<option value="">06</option>
+										<option value="">07</option>
+										<option value="">08</option>
+										<option value="">09</option>
+										<option value="">10</option>
+										<option value="">11</option>
+										<option value="">12</option>
+										<option value="">13</option>
+										<option value="">14</option>
+										<option value="">15</option>
+										<option value="">16</option>
+										<option value="">17</option>
+										<option value="">18</option>
+										<option value="">19</option>
+										<option value="">20</option>
+										<option value="">21</option>
+										<option value="">22</option>
+										<option value="">23</option>
+										<option value="">00</option>
+									</select>
+									<select class="w70">
+										<option value="">00</option>
+										<option value="">10</option>
+										<option value="">20</option>
+										<option value="">30</option>
+										<option value="">40</option>
+										<option value="">50</option>
+									</select>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="write_con">
+							<div class="editor"><img src="/resource_bp/images/temp/editor.jpg" alt=""></div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<div class="file_upload"><img src="/resource_bp/images/temp/file_upload.jpg" alt=""></div>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</form>
+		</div><!-- //Write Table -->
+
+		<div class="btnbox">
+			<div class="fr">
+				<a href="#" class="btn" onclick="javascript:close_layer();">취소</a>
+				<a href="javascript:void(0);" class="btn" onclick="layer_pop('/notice/BP_NO_1003.html', '게시글 미리보기', 856, 760);">미리보기</a>
+				<a href="#" class="btn confirm">수정완료</a>
+			</div>
+		</div><!-- //Button -->
+
+	</div><!-- //Container -->
+</div>
+</body>
+</html>

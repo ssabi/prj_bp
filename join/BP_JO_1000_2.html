@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>파트너 유형 선택 &lt; 회원가입 &lt; Partner Portal</title>
+
+<link rel="stylesheet" href="/resource_bp/css/style.css">
+<script src="/resource_bp/js/script.js"></script>
+<script src="/resource_bp/js/common.js"></script>
+<script>
+$(document).ready(function(){
+	$(".join_type li").on({
+		"click" : function(e){
+			e.preventDefault();
+
+			$(".join_type li").removeClass("on");
+			$(this).addClass("on");
+
+			$(document).on('mousedown touchstart focusin', function(e){
+				if($(e.target).closest(".join_type li").length === 0) {
+					$(".join_type li").removeClass("on");
+				}
+			});
+		}
+	});
+});
+</script>
+</head>
+<body>
+<!-- //Popup size : 975x760 -->
+<div id="pop_wrap">
+	<div id="pop_head">
+		<strong>회원가입</strong>
+		<a href="#" class="close" onclick="javascript:close_layer();">닫기</a>
+	</div><!-- //Header -->
+	<div id="pop_container">
+		<div class="ptit">
+			<strong>1. 파트너 유형선택</strong>
+
+			<ul>
+				<li class="on">1. 파트너 유형선택</li>
+				<li>2. 약관동의</li>
+				<li>3. 파트너 정보입력</li>
+			</ul>
+		</div><!-- //Title -->
+
+		<div class="joinbox">
+			<strong class="jtit">가입대상, 파트너 유형 선택</strong>
+			<p class="desc">가입하고자 하는 <strong class="red02">파트너 유형을 선택</strong>해 주세요. 선택된 유형에 따라 파트너 <strong class="red02">회원 가입이 진행</strong>됩니다.</p>
+
+			<div class="join_type">
+				<div>
+					<ul>
+						<li><a href="#"><strong>솔루션</strong><i class="solution"></i><span>솔루션 구축 개발<br/>유지보수 서비스 제공</span></a></li>
+						<li><a href="#"><strong>대리점</strong><i class="agency"></i><span>유무선 상품, 디바이스<br/>솔루션 판매 대행</span></a></li>
+						<li><a href="#"><strong>홈 고객센터</strong><i class="home"></i><span>유선 상품의 설치<br/>A/S 등의 서비스 대행</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="btnbox">
+			<a href="BP_JO_1001.html" class="btn">다음</a>
+			<a href="#" class="btn" onclick="javascript:close_layer();">취소</a>
+		</div><!-- //Button -->
+
+	</div><!-- //Container -->
+</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>Partner Portal</title>
+
+<style>
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0}
+fieldset,img{border:0 none}
+dl,ul,ol,menu,li{list-style:none}
+table{border-collapse:collapse;border-spacing:0;border:0 none}
+blockquote,q{quotes: none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+input,select,textarea,button{vertical-align:middle}
+button{border:0 none;background-color:transparent;cursor:pointer}
+a{color:#333;text-decoration:none}
+a:active,a:hover{text-decoration:underline}
+address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
+html,body{height:100%}
+img{vertical-align:middle}
+legend,.hide{width:1px;height:1px;line-height:0;position:absolute;left:-5000px;top:-5000px;z-index:-100;text-indent:-2000px}
+legend{*display:none}
+caption{font-size:0;width:0;height:0;line-height:0;text-indent:-9999px}
+*{-webkit-text-size-adjust:none}
+input::-ms-clear{display:none}
+textarea{outline:0;font-size:13px;line-height:20px;color:#4c4c4c;font-family:Malgun Gothic, '맑은 고딕', Dotum, '돋움', sans-serif;color:#4c4c4c}
+
+body{font-size:13px;line-height:1.2;font-family:Malgun Gothic, '맑은 고딕', Dotum, '돋움', sans-serif;color:#4c4c4c}
+
+.tit{display:block;font-size:20px;line-height:30px;padding-bottom:10px}
+.tit:before{content:'<'}
+.tit:after{content:'>'}
+
+.btn{margin:10px 0;width:100px;height:30px;line-height:30px;background-color:#bbb;border:0;cursor:pointer;outline:0}
+.btn:hover{background-color:#c0c0c0}
+.btn:active{background-color:#ff3b57;color:#fff}
+</style>
+
+<script type="text/javascript" charset="utf-8" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#btn").on({
+		"click" : function(){
+			var txt = $("#cont").val();
+
+			$(".result").empty().html(removeTag(txt));
+		}
+	});
+});
+
+var removeTag = function(txt){
+	var tmpTxt, tag, replaceTxt;
+
+	tmpTxt = txt;
+
+	//정규식
+	tag = new RegExp();
+	tag = /[<][^>]*[>]/gi;
+
+	replaceTxt = txt.replace(tag, "");
+
+	return replaceTxt;
+}
+</script>
+</head>
+<body>
+<div style="padding:20px">
+	<h1 class="tit">HTML 태그 제거</h1>
+	<textarea name="cont" id="cont" cols="30" rows="10" style="width:100%;height:300px;border:1px solid #ddd"></textarea>
+
+	<input type="submit" id="btn" class="btn" value="  변 환  " />
+
+	<div class="result" style="width:100%;height:300px;border:1px solid #ddd"></div>
+</div>
+</body>
+</html>

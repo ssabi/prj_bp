@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Partner Portal</title>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style>
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0}
+fieldset,img{border:0 none}
+dl,ul,ol,menu,li{list-style:none}
+table{border-collapse:collapse;border-spacing:0;border:0 none}
+blockquote,q{quotes: none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+input,select,textarea,button{vertical-align:middle}
+button{border:0 none;background-color:transparent;cursor:pointer}
+a{color:#333;text-decoration:none}
+a:active, a:hover{text-decoration:underline}
+address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
+html, body{height:100%}
+img{vertical-align:middle}
+legend, .hide{width:1px;height:1px;line-height:0;position:absolute;left:-5000px;top:-5000px;z-index:-100;text-indent:-2000px;}
+legend{*display:none}
+caption{font-size:0;width:0;height:0;line-height:0;text-indent:-9999px}
+*{-webkit-text-size-adjust:none}
+
+body{overflow-y:scroll;font-size:13px;line-height:20px;font-family:Malgun Gothic, '맑은 고딕', Arial, Dotum, '돋움', sans-serif}
+
+h1{display:block;padding-top:20px;text-align:center;font-size:30px;letter-spacing:0.5em;line-height:40px;font-family:verdana;}
+
+.gnb_box{background-color:#2e3441}
+.gnb ul{overflow:hidden}
+.gnb ul li{float:left;width:12.5%;font-weight:bold;font-size:14px;line-height:20px;color:#fff;text-align:center}
+.gnb ul li a{display:block;padding:7px 0 8px;color:#fff;border-right:1px solid #20242d}
+.gnb ul li.on a, .gnb ul li a:hover, .gnb ul li a:focus{padding-bottom:5px;border-bottom:3px solid #e60724;text-decoration:none}
+.gnb ul li:first-child a{border-left:1px solid #20242d}
+
+.boxwrap .tbl_box{margin:20px 20px 30px;position:relative;border-top:1px solid #2e3441;border-bottom:1px solid #2e3441}
+.boxwrap .table{width:100%;font-size:12px;text-align:left}
+.boxwrap .table thead th{padding:0 11px;height:38px;font-weight:bold;text-align:center;letter-spacing:-0.025em;color:#3c404a;background:#edeef3;border-bottom:1px solid #e1e2e6}
+.boxwrap .table tbody th, .boxwrap .table tbody td{position:relative;padding:5px 10px;line-height:20px;letter-spacing:-0.025em;color:#3c404a;border-top:1px solid #e1e2e6;border-left:1px solid #e1e2e6;vertical-align:top}
+.boxwrap .table .num{border-left:0}
+.boxwrap .table .al_c{text-align:center}
+.boxwrap .table input[type=text]{vertical-align:top;margin:-7px 0}
+.boxwrap .table input[type=checkbox]{position:absolute;left:-9999px}
+.boxwrap .table input[type=checkbox] + label{display:inline-block;position:relative;margin-top:-4px;width:14px;height:14px;vertical-align:middle;cursor:pointer}
+.boxwrap .table input[type=checkbox]:checked + label{background-position:0 -14px}
+.boxwrap .table a{color:#fb6d07}
+.boxwrap .table .del td{background-color:#eee}
+.boxwrap .table .del td:nth-child(2), .boxwrap .table .del td:nth-child(3), .boxwrap .table .del td:nth-child(4){text-decoration:line-through}
+.boxwrap .table .del a{color:#3c404a}
+</style>
+</head>
+<body>
+<div class="boxwrap">
+	<h1>BP Portal</h1>
+	<div class="tbl_box">
+		<table class="table">
+			<colgroup>
+				<col style="width:50px">
+				<col style="width:150px" />
+				<col style="width:240px" />
+				<col style="width:180px" />
+				<col style="width:250px" />
+				<col />
+			</colgroup>
+			<thead>
+			<tr>
+				<th scope="col">No.</th>
+				<th scope="col">1Depth</th>
+				<th scope="col">2Depth</th>
+				<th scope="col">화면ID</th>
+				<th scope="col">URL</th>
+				<th scope="col">비고</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td class="num" rowspan="6">00</td>
+				<td rowspan="6">Index</td>
+				<td>로그인 전(SKT)</td>
+				<td>BP_MA_1001</td>
+				<td><a href="./BP_MA_1001_T.html" target="_blank">BP_MA_1001.html (SKT)</a></td>
+				<td>개발전달 11.17</td>
+			</tr>
+			<tr>
+				<td>로그인 전(SKB)</td>
+				<td>BP_MA_1001</td>
+				<td><a href="./BP_MA_1001_B.html" target="_blank">BP_MA_1001.html (SKB)</a></td>
+				<td>개발전달 11.17</td>
+			</tr>
+			<tr>
+				<td>로그인 후 / 공지 카드형(SKT)</td>
+				<td>BP_MA_1002</td>
+				<td><a href="./BP_MA_1002_T.html" target="_blank">BP_MA_1002.html (SKT)</a></td>
+				<td>개발전달 11.17</td>
+			</tr>
+			<tr>
+				<td>로그인 후 / 공지 카드형(SKB)</td>
+				<td>BP_MA_1002</td>
+				<td><a href="./BP_MA_1002_B.html" target="_blank">BP_MA_1002.html (SKB)</a></td>
+				<td>개발전달 11.17</td>
+			</tr>
+			<tr>
+				<td>로그인 후 / 공지 리스트형(SKT)</td>
+				<td>BP_MA_1003</td>
+				<td><a href="./BP_MA_1003_T.html" target="_blank">BP_MA_1003.html (SKT)</a></td>
+				<td>개발전달 11.17</td>
+			</tr>
+			<tr>
+				<td>로그인 후 / 공지 리스트형(SKB)</td>
+				<td>BP_MA_1003</td>
+				<td><a href="./BP_MA_1003_B.html" target="_blank">BP_MA_1003.html (SKB)</a></td>
+				<td>개발전달 11.17</td>
+			</tr>
+			<tr>
+				<td class="num">01</td>
+				<td rowspan="9">회원가입</td>
+				<td>파트너 유형 선택(SKT)</td>
+				<td>BP_JO_1000_1</td>
+				<td><a href="./join/BP_JO_1000_1.html" target="_blank">BP_JO_1000_1.html</a></td>
+				<td>개발전달 11.11</td>
+			</tr>
+			<tr>
+				<td class="num">02</td>
+				<td>파트너 유형 선택(SKB)</td>
+				<td>BP_JO_1000_2</td>
+				<td><a href="./join/BP_JO_1000_2.html" target="_blank">BP_JO_1000_2.html</a></td>
+				<td>개발전달 11.11</td>
+			</tr>
+			<tr>
+				<td class="num">03</td>
+				<td>약관 동의</td>
+				<td>BP_JO_1001</td>
+				<td><a href="./join/BP_JO_1001.html" target="_blank">BP_JO_1001.html (SKT)</a><br>
+				<a href="./join/BP_JO_1001_SKB.html" target="_blank">BP_JO_1001.html (SKB)</a></td>
+				<td>개발전달 11.11</td>
+			</tr>
+			<tr class="del">
+				<td class="num">04</td>
+				<td>파트너 회원가입(SKB 대리점)</td>
+				<td>BP_JO_1002</td>
+				<td><!-- <a href="./join/BP_JO_1002.html" target="_blank"> -->BP_JO_1002.html</a></td>
+				<td></td>
+			</tr>
+			<tr class="del">
+				<td class="num">05</td>
+				<td>파트너 회원가입(SKB 솔루션)</td>
+				<td>BP_JO_1003</td>
+				<td><!-- <a href="./join/BP_JO_1003.html" target="_blank"> -->BP_JO_1003.html</a></td>
+				<td></td>
+			</tr>
+			<tr class="del">
+				<td class="num">06</td>
+				<td>파트너 회원가입(SKB 홈 고객센터)</td>
+				<td>BP_JO_1004</td>
+				<td><!-- <a href="./join/BP_JO_1004.html" target="_blank"> -->BP_JO_1004.html</a></td>
+				<td></td>
+			</tr>
+			<tr class="del">
+				<td class="num">07</td>
+				<td>파트너 회원가입(SKT 대리점)</td>
+				<td>BP_JO_1005</td>
+				<td><!-- <a href="./join/BP_JO_1005.html" target="_blank"> -->BP_JO_1005.html</a></td>
+				<td></td>
+			</tr>
+			<tr class="del">
+				<td class="num">08</td>
+				<td>파트너 회원가입(SKT 솔루션)</td>
+				<td>BP_JO_1006</td>
+				<td><!-- <a href="./join/BP_JO_1006.html" target="_blank"> -->BP_JO_1006.html</a></td>
+				<td></td>
+			</tr>
+			<tr class="del">
+				<td class="num">09</td>
+				<td>파트너 선택</td>
+				<td>BP_JO_1007</td>
+				<td><!-- <a href="./join/BP_JO_1007.html" target="_blank"> -->BP_JO_1007.html</a></td>
+				<td></td>
+			</tr>
+			<!-- //Join -->
+			<tr>
+				<td class="num">10</td>
+				<td>개인정보관리</td>
+				<td>파트너 탈퇴</td>
+				<td>BP_JO_1009</td>
+				<td><a href="./join/BP_JO_1009.html" target="_blank">BP_JO_1009.html</a></td>
+				<td>개발전달 11.11</td>
+			</tr>
+			<!-- //개인정보관리 -->
+			<tr>
+				<td class="num">11</td>
+				<td rowspan="5">공지사항</td>
+				<td>공지사항 작성</td>
+				<td>BP_NO_1001</td>
+				<td><a href="./notice/BP_NO_1001.html" target="_blank">BP_NO_1001.html</a></td>
+				<td>개발전달 11.17</td>
+			</tr>
+			<tr>
+				<td class="num">12</td>
+				<td>공지사항 임시저장</td>
+				<td>BP_NO_1002</td>
+				<td><a href="./notice/BP_NO_1002.html" target="_blank">BP_NO_1002.html</a></td>
+				<td>개발전달 11.17</td>
+			</tr>
+			<tr>
+				<td class="num">13</td>
+				<td>공지사항 미리보기</td>
+				<td>BP_NO_1003</td>
+				<td><a href="./notice/BP_NO_1003.html" target="_blank">BP_NO_1003.html</a></td>
+				<td>개발전달 11.17</td>
+			</tr>
+			<tr>
+				<td class="num">14</td>
+				<td>공지사항 상세조회</td>
+				<td>BP_NO_1004</td>
+				<td><a href="./notice/BP_NO_1004.html" target="_blank">BP_NO_1004.html</a></td>
+				<td>개발전달 11.17</td>
+			</tr>
+			<tr>
+				<td class="num">15</td>
+				<td>공지사항 수정</td>
+				<td>BP_NO_1005</td>
+				<td><a href="./notice/BP_NO_1005.html" target="_blank">BP_NO_1005.html</a></td>
+				<td>개발전달 11.17</td>
+			</tr>
+			<!-- //Notice -->
+			<tr>
+				<td class="num">16</td>
+				<td rowspan="4">파트너 진행상황 조회</td>
+				<td>SKT 세일즈</td>
+				<td>BP_DO_1001</td>
+				<td><a href="./partner/BP_DO_1001_t_sales.html" target="_blank">BP_DO_1001.html</a></td>
+				<td>개발전달 11.17</td>
+			</tr>
+			<tr>
+				<td class="num">17</td>
+				<td>SKT 솔루션</td>
+				<td>BP_DO_1001</td>
+				<td><a href="./partner/BP_DO_1001_t_solution.html" target="_blank">BP_DO_1001.html</a></td>
+				<td>개발전달 11.17</td>
+			</tr>
+			<tr>
+				<td class="num">18</td>
+				<td>SKB 세일즈</td>
+				<td>BP_DO_1001</td>
+				<td><a href="./partner/BP_DO_1001_b_sales.html" target="_blank">BP_DO_1001.html</a></td>
+				<td>개발전달 11.17</td>
+			</tr>
+			<tr>
+				<td class="num">19</td>
+				<td>SKB 솔루션</td>
+				<td>BP_DO_1001</td>
+				<td><a href="./partner/BP_DO_1001_b_solution.html" target="_blank">BP_DO_1001.html</a></td>
+				<td>개발전달 11.17</td>
+			</tr>
+			<!-- //파트너 진행상황 조회 -->
+			<tr>
+				<td class="num">20</td>
+				<td rowspan="5">전자계약</td>
+				<td>계약 목록 조회</td>
+				<td>BP_EL_1001</td>
+				<td><a href="./contract/BP_EL_1001.html" target="_blank">BP_EL_1001.html</a></td>
+				<td>개발전달 11.16</td>
+			</tr>
+			<tr>
+				<td class="num">21</td>
+				<td>계약 목록 조회 - 검색 결과가 없는 경우</td>
+				<td>BP_EL_1001</td>
+				<td><a href="./contract/BP_EL_1001_nodata.html" target="_blank">BP_EL_1001.html</a></td>
+				<td>개발전달 11.16</td>
+			</tr>
+			<tr>
+				<td class="num">22</td>
+				<td>계약정보 상세 조회</td>
+				<td>BP_EL_1002</td>
+				<td><a href="./contract/BP_EL_1002.html" target="_blank">BP_EL_1002.html</a></td>
+				<td>개발전달 11.16</td>
+			</tr>
+			<tr>
+				<td class="num">23</td>
+				<td>계약서 보기(HTML) - SKT 계약 완료</td>
+				<td>BP_EL_1003</td>
+				<td><!-- <a href="./contract/BP_EL_1003_skt.html" target="_blank"> -->BP_EL_1003.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="num">23</td>
+				<td>계약서 보기(HTML) - SKB 계약 완료</td>
+				<td>BP_EL_1003</td>
+				<td><!-- <a href="./contract/BP_EL_1003_skb.html" target="_blank"> -->BP_EL_1003.html</a></td>
+				<td></td>
+			</tr>
+			<!-- //전자계약 -->
+			<tr>
+				<td class="num">24</td>
+				<td rowspan="4">공통</td>
+				<td>Contact Us(SKT)</td>
+				<td>BP_OT_1001</td>
+				<td><a href="./common/BP_OT_1001_T.html" target="_blank">BP_OT_1001.html (SKT)</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="num">25</td>
+				<td>Contact Us(SKB)</td>
+				<td>BP_OT_1001</td>
+				<td><a href="./common/BP_OT_1001_B.html" target="_blank">BP_OT_1001.html (SKB)</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="num">26</td>
+				<td>개인정보 취급방침</td>
+				<td>BP_OT_1002</td>
+				<td><a href="./common/BP_OT_1002.html" target="_blank">BP_OT_1002.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="num">27</td>
+				<td>도움말</td>
+				<td>BP_OT_1003</td>
+				<td><a href="./common/BP_OT_1003.html" target="_blank">BP_OT_1003.html</a></td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+</div>
+</body>
+</html>

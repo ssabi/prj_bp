@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>계약 목록 조회 &lt; 전자계약 &lt; Partner Portal</title>
+
+<link rel="stylesheet" href="/resource_bp/css/style.css">
+<script src="/resource_bp/js/script.js"></script>
+<script src="/resource_bp/js/common.js"></script>
+</head>
+<body>
+<!-- //Popup size : 975x826 -->
+<div id="pop_wrap">
+	<div id="pop_head">
+		<strong>계약 목록 조회</strong>
+		<a href="#" class="close" onclick="javascript:close_layer();">닫기</a>
+	</div><!-- //Header -->
+	<div id="pop_container">
+		<h1 class="ptit02">전자계약 현황</h1>
+
+		<div class="tbl_opt reset_area">
+			<form action="#" method="post">
+				<table>
+					<colgroup>
+						<col style="width:135px;" />
+						<col />
+					</colgroup>
+					<tbody>
+					<tr>
+						<th scope="row">키워드</th>
+						<td>
+							<div class="frm_ele">
+								<select class="w141">
+									<option value="">계약번호</option>
+									<option value="">계약명</option>
+									<option value="">계약업체명</option>
+								</select>
+								<input type="text" placeholder="검색어를 입력해주세요" />
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">계약기간</th>
+						<td>
+							<div class="period">
+								<select class="w141">
+									<option value="">계약 시작일</option>
+									<option value="">계약 종료일</option>
+								</select>
+
+								<p><input type="text" id="opt_start" readonly="readonly" /></p>
+								<span class="fl_dc">~</span>
+								<p><input type="text" id="opt_end" readonly="readonly" /></p>
+								<a href="#" class="btn line02" data-period="month3">3개월</a>
+								<a href="#" class="btn line02" data-period="month6">6개월</a>
+								<a href="#" class="btn line02" data-period="month12">12개월</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">진행 상태</th>
+						<td>
+							<input type="checkbox" name="" id="status01" checked="checked" /><label for="status01">서명요청</label>
+							<input type="checkbox" name="" id="status02" checked="checked" /><label for="status02">진행중 1차</label>
+							<input type="checkbox" name="" id="status03" checked="checked" /><label for="status03">진행중 2차</label>
+							<input type="checkbox" name="" id="status04" /><label for="status04">계약완료</label>
+							<input type="checkbox" name="" id="status05" /><label for="status05">계약취소</label>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</form>
+		</div><!-- //Table Option -->
+
+		<div class="btnbox">
+			<a href="#" class="btn resetBtn">초기화</a>
+			<a href="#" class="btn confirm">검색</a>
+		</div><!-- //Button -->
+
+		<div class="tbl_opt">
+			<div class="fl">
+				<p class="tbl_result">전체115건&nbsp;&nbsp;<span class="red02">1</span>/8페이지</p>
+			</div>
+
+			<div class="fr">
+				<select class="w121">
+					<option value="">10개씩 조회</option>
+					<option value="">20개씩 조회</option>
+					<option value="">30개씩 조회</option>
+				</select>
+			</div>
+		</div><!-- //Options -->
+
+		<div class="tbl_wrap type02">
+			<table class="tbl_list">
+				<caption></caption>
+				<colgroup>
+					<col style="width:15%" />
+					<col style="width:" />
+					<col style="width:20%" />
+					<col style="width:12%" />
+					<col style="width:12%" />
+					<col style="width:12%" />
+				</colgroup>
+				<thead>
+				<tr>
+					<th scope="col">계약번호</th>
+					<th scope="col">계약 명</th>
+					<th scope="col">계약업체 명</th>
+					<th scope="col">계약 시작일</th>
+					<th scope="col">계약 종료일</th>
+					<th scope="col">진행 상태</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>71100238326</td>
+					<td class="al_l"><a href="javascript:void(0);" onclick="layer_pop('/contract/BP_EL_1002.html', '계약정보 상세 조회', 975, 997, 'self');">임대매장 개선신청</a></td>
+					<td>&nbsp;</td>
+					<td>2016.06.20</td>
+					<td>2017.06.19</td>
+					<td>서명요청</td>
+				</tr>
+				<tr>
+					<td>71100238326</td>
+					<td class="al_l"><a href="javascript:void(0);" onclick="layer_pop('/contract/BP_EL_1002.html', '계약정보 상세 조회', 975, 997, 'self');">위탁매장 계약</a></td>
+					<td>&nbsp;</td>
+					<td>2016.06.20</td>
+					<td>2017.06.19</td>
+					<td>진행중</td>
+				</tr>
+				<tr>
+					<td>71100238326</td>
+					<td class="al_l"><a href="#">투자매장 전자계약</a></td>
+					<td>&nbsp;</td>
+					<td>2016.06.20</td>
+					<td>2017.06.19</td>
+					<td>계약완료</td>
+				</tr>
+				<tr>
+					<td>71100238326</td>
+					<td class="al_l"><a href="#">원주터미널 투자매장</a></td>
+					<td>&nbsp;</td>
+					<td>2016.06.20</td>
+					<td>2017.06.19</td>
+					<td>계약완료</td>
+				</tr>
+				<tr>
+					<td>71100238326</td>
+					<td class="al_l"><a href="#">원주터미널 투자매장</a></td>
+					<td>&nbsp;</td>
+					<td>2016.06.20</td>
+					<td>2017.06.19</td>
+					<td>계약완료</td>
+				</tr>
+				<tr>
+					<td>71100238326</td>
+					<td class="al_l"><a href="#">원주터미널 투자매장</a></td>
+					<td>&nbsp;</td>
+					<td>2016.06.20</td>
+					<td>2017.06.19</td>
+					<td>계약완료</td>
+				</tr>
+				<tr>
+					<td>71100238326</td>
+					<td class="al_l"><a href="#">원주터미널 투자매장</a></td>
+					<td>&nbsp;</td>
+					<td>2016.06.20</td>
+					<td>2017.06.19</td>
+					<td>계약완료</td>
+				</tr>
+				<tr>
+					<td>71100238326</td>
+					<td class="al_l"><a href="#">원주터미널 투자매장</a></td>
+					<td>&nbsp;</td>
+					<td>2016.06.20</td>
+					<td>2017.06.19</td>
+					<td>계약완료</td>
+				</tr>
+				<tr>
+					<td>71100238326</td>
+					<td class="al_l"><a href="#">원주터미널 투자매장</a></td>
+					<td>&nbsp;</td>
+					<td>2016.06.20</td>
+					<td>2017.06.19</td>
+					<td>계약완료</td>
+				</tr>
+				<tr>
+					<td>71100238326</td>
+					<td class="al_l"><a href="#">원주터미널 투자매장</a></td>
+					<td>&nbsp;</td>
+					<td>2016.06.20</td>
+					<td>2017.06.19</td>
+					<td>계약완료</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- //List Table  -->
+
+		<div class="paging">
+			<div>
+				<a href="#" class="first"><img src="/resource_bp/images/common/page_first.png" alt="처음으로"></a>
+				<a href="#" class="prev"><img src="/resource_bp/images/common/page_prev.png" alt="이전으로"></a>
+				<span>
+					<a href="#">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#" class="on">4</a>
+					<a href="#">5</a>
+					<a href="#">6</a>
+					<a href="#">7</a>
+					<a href="#">8</a>
+					<a href="#">9</a>
+					<a href="#">10</a>
+				</span>
+				<a href="#" class="next"><img src="/resource_bp/images/common/page_next.png" alt="다음으로"></a>
+				<a href="#" class="last"><img src="/resource_bp/images/common/page_last.png" alt="끝으로"></a>
+			</div>
+		</div><!-- //Pagination -->
+
+	</div>
+</div>
+</body>
+</html>
