@@ -373,7 +373,7 @@ var layer_pop = function(url, name, width, height, target){
 			"id" : "ly_ifrm"+lycnt
 		});
 
-		$("body").addClass("ovf_hdn");
+		//$("body").addClass("ovf_hdn");
 
 		var tmp = inDiv.css({"width" : width, "height":"100%"}).append(div.append(frameTit).append(iframe));
 		bg.append(tmp).appendTo(doc);

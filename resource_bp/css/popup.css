@@ -85,10 +85,13 @@
 .termbox.privacy_type .scrollbox p{padding-left:10px}
 .termbox.privacy_type .scrollbox p + strong{margin-top:28px}
 /* 도움말 */
-.help_box{position:relative;width:893px;height:530px;border:1px solid #b3b3b3;border-top-color:#000}
+.help_box{position:relative;/* width:893px; */height:530px;border:1px solid #b3b3b3;border-top-color:#000}
 .help_list{overflow:hidden;overflow-y:auto;position:absolute;left:0;top:0;width:232px;height:100%;border-right:1px solid #b3b3b3}
 .help_list>div{padding:20px}
 .help_cont{margin-left:233px}
+.help_cont .scrollbox{overflow:hidden;overflow-y:auto;height:490px;padding:20px}
+.help_cont .cont{display:none}
+.help_cont .cont.show{display:block}
 
 /*
 #pop_container .tbl_wrap{margin-top:0}
@@ -112,7 +115,7 @@
 .c_ext>div{position:relative;left:-50%;float:right}
 .c_ext .c_ext_inner{position:relative;left:50%;float:left;width:330px;height:336px;border:1px solid #d6d6d6;text-align:center}
 .c_ext .c_ext_inner + .c_ext_inner{margin-left:-1px}
-.c_ext .c_ext_inner strong{display:inline-block;position:relative;margin-top:40px;padding-top:114px;width:100%;font-weight:bold;font-size:17px;line-height:24px;text-decoration:uppercase;vertical-align:top}
+.c_ext .c_ext_inner strong{display:inline-block;position:relative;margin-top:40px;padding-top:114px;width:100%;font-weight:bold;font-size:17px;line-height:24px;text-transform:uppercase;vertical-align:top}
 .c_ext .c_ext_inner strong:before{content:'';display:block;position:absolute;left:50%;top:0;margin-left:-50px;width:100px;height:100px;background-repeat:no-repeat;background-position:left top}
 .c_ext .c_ext_inner strong.ico_mobile:before{background-image:url(/resource_bp/images/common/ico_c_mobile.png)}
 .c_ext .c_ext_inner strong.ico_idea:before{background-image:url(/resource_bp/images/common/ico_c_t-idea.png)}

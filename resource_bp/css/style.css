@@ -98,9 +98,9 @@ textarea{border:1px solid #b3b3b3}
 
 /* Header */
 .inhead{position:relative;width:100%;max-width:1143px;height:509px;margin:0 auto}
-.logo{position:absolute;left:0;top:24px}
+.logo{position:absolute;left:0;top:29px}
 .logo a{display:block}
-.hd_txt{overflow:hidden;position:absolute;left:0;top:152px;width:408px;height:182px;background:url(/resource_bp/images/common/main_txt.png) no-repeat left top;text-indent:-9999px}
+.hd_txt{overflow:hidden;position:absolute;left:0;top:158px;width:397px;height:176px;background:url(/resource_bp/images/common/main_txt.png) no-repeat left top;text-indent:-9999px}
 .hd_btnbox{overflow:hidden;position:absolute;left:0;top:375px}
 .hd_btnbox a{float:left;width:141px;height:41px;line-height:41px;border:1px solid #2d2d2d;background-color:#fff;font-weight:bold;font-size:16px;letter-spacing:-0.05em;color:#2d2d2d;text-align:center}
 .hd_btnbox a.confirm{border-color:#ff3b57;background-color:#ff3b57;font-size:18px;color:#fff}
@@ -127,15 +127,21 @@ textarea{border:1px solid #b3b3b3}
 .tnavi ul li:last-child a{border-top-right-radius:3px;border-bottom-right-radius:3px}
 
 /* Footer */
-.infoot{overflow:hidden;position:relative;width:100%;max-width:1143px;height:122px;margin:0 auto;text-align:center}
-.infoot .ft_logo{overflow:hidden;position:absolute;left:0;top:48px;height:28px;text-indent:-9999px}
-.infoot .ft_logo.skt{width:68px;background:url(/resource_bp/images/common/ft_logo_skt.png) no-repeat left top}
-.infoot .ft_logo.skb{width:80px;background:url(/resource_bp/images/common/ft_logo_skb.png) no-repeat left top}
-.infoot ul{position:relative;left:-50%;float:right;margin:22px 0 9px}
-.infoot ul li{position:relative;left:50%;float:left;margin-left:10px;font-weight:bold;font-size:12px;line-height:18px}
-.infoot ul li:first-child{margin-left:0}
+.infoot{overflow:hidden;position:relative;width:100%;max-width:1143px;height:122px;margin:0 auto;text-align:left}
+.infoot .ft_logo{overflow:hidden;position:absolute;left:0;top:40px;height:34px;text-indent:-9999px}
+.infoot .ft_logo.skt{width:89px;background:url(/resource_bp/images/common/ft_logo_skt.png) no-repeat left top}
+.infoot .ft_logo.skb{width:107px;background:url(/resource_bp/images/common/ft_logo_skb.png) no-repeat left top}
+.infoot ul{position:relative;position:absolute;right:0;top:45px}
+.infoot ul li{position:relative;float:left;padding-left:5px;margin-left:3px;/* font-weight:bold; */font-size:12px;line-height:18px}
+.infoot ul li:before{content:'';position:absolute;left:0;top:10px;border-left:1px solid #d1d1d1;height:11px}
+.infoot ul li:first-child{padding-left:0;margin-left:0}
+.infoot ul li:first-child:before{display:none}
 .infoot ul li a{display:block;padding:5px;color:#666}
-.infoot address, .infoot .copyright{clear:both;font-weight:bold;font-size:11px;line-height:16px;color:#808080}
+.infoot ul li:first-child + li, .infoot ul li:first-child + li a{font-weight:bold}
+.infoot address{padding-top:41px}
+.infoot address, .infoot .copyright{clear:both;font-size:12px;line-height:19px;color:#808080}
+.infoot .ft_logo.skt + ul + address, .infoot .ft_logo.skt + ul + address + .copyright{padding-left:119px}
+.infoot .ft_logo.skb + ul + address, .infoot .ft_logo.skb + ul + address + .copyright{padding-left:137px}
 
 /* Container */
 #content .incon{padding:40px;background-color:#fff}
@@ -266,19 +272,27 @@ textarea{border:1px solid #b3b3b3}
 .main_task ul li a.progress:before{background-position:-106px 0}
 .main_task ul li a.contract:before{background-position:-212px 0}
 .main_task ul li a.collateral:before{background-position:-318px 0}
+/* 활성 */
 .main_task ul li.on a, .main_task ul li a:hover{margin:0;height:166px;padding-top:50px;border-color:#ff3b57;color:#ff3b57;font-size:19px;box-shadow:10px 10px 10px rgba(0,0,0,0.15)}
+.main_task ul li.disable a, .main_task ul li.disable a:hover{margin:10px 0;padding-top:40px;width:186px;height:156px;color:#bababa;border:2px solid #c9c9c9;background-color:#fff;border-radius:5px;font-weight:bold;font-size:17px;line-height:24px;letter-spacing:-0.12em;box-shadow:3px 3px 5px rgba(0,0,0,0.1)}
 .main_task ul li.on a:before, .main_task ul li a:hover:before{margin-bottom:12px}
 .main_task ul li.on a.application:before, .main_task ul li a.application:hover:before{background-position:0 -81px}
 .main_task ul li.on a.progress:before, .main_task ul li a.progress:hover:before{background-position:-106px -81px}
 .main_task ul li.on a.contract:before, .main_task ul li a.contract:hover:before{background-position:-212px -81px}
 .main_task ul li.on a.collateral:before, .main_task ul li a.collateral:hover:before{background-position:-318px -81px}
 .main_task .badge_new{display:block;position:absolute;right:12px;top:-2px;width:38px;height:37px;background:url(/resource_bp/images/common/badge_new_mark.png) no-repeat left top}
+/* 비활성 */
+.main_task ul li.disable a.application:before, .main_task ul li.disable a.application:hover:before{background-position:0 -162px}
+.main_task ul li.disable a.progress:before, .main_task ul li.disable a.progress:hover:before{background-position:-106px -162px}
+.main_task ul li.disable a.contract:before, .main_task ul li.disable a.contract:hover:before{background-position:-212px -162px}
+.main_task ul li.disable a.collateral:before, .main_task ul li.disable a.collateral:hover:before{background-position:-318px -162px}
+
 
 /* Slider */
 .slick-slider{position:relative;display:block;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}
 .slick-list{position:relative;display:block;overflow:hidden;margin:0;padding:0}
 .slick-list:focus{outline:none}
-.slick-list.dragging{cursor:pointer;cursor:hand}
+.slick-list.dragging{cursor:pointer;/* cursor:hand */}
 .slick-slider .slick-track, .slick-slider .slick-list{/*-webkit-transform:translate3d(0, 0, 0);-moz-transform:translate3d(0, 0, 0);-ms-transform:translate3d(0, 0, 0);-o-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0)*/}
 .slick-track{position:relative;top:0;left:0;display:block}
 .slick-track:before, .slick-track:after{display:table;content:''}
@@ -323,10 +337,12 @@ textarea{border:1px solid #b3b3b3}
 .bn_wrap .slick-dots li button{vertical-align:top}
 .banner{overflow:hidden;text-align:left;margin-right:-13px}
 .banner a{display:block;padding:0 13px 0 0;vertical-align:middle}
+.banner img{display:inline;width:100%;max-width:100%;height:67px}
 .banner .slick-slide img{display:block}
 .banner .txt_bn{display:table;position:relative;width:100%}
 .banner .txt_bn:after{content:'';display:block;position:absolute;right:12px;top:50%;margin-top:-10px;width:20px;height:20px;background:url(/resource_bp/images/common/icon.png) no-repeat left -227px}
 .banner .txt_bn span{display:table-cell;padding:0 20px;border:1px solid #d1d1d1;height:65px;background-color:#fff;font-size:14px;letter-spacing:-0.025em;color:#333;vertical-align:middle;text-overflow:ellipsis;white-space:nowrap}
+.banner .slick-dots{width:auto;left:0;right:13px}
 
 .noresult{padding:69px 0 0;min-height:271px;text-align:center}
 .noresult p{padding-top:123px;background:url(/resource_bp/images/common/ico_comm95x103.png) no-repeat center top;line-height:20px;color:#808080}
@@ -376,12 +392,26 @@ textarea{border:1px solid #b3b3b3}
 /* 도움말 */
 .help_box .jstree-default{letter-spacing:-0.05em}
 .help_box .jstree-default .jstree-anchor{color:#333}
+.help_box .jstree-default .jstree-anchor.jstree-clicked{color:#ff3b57}
 .help_box .jstree-default .jstree-leaf > .jstree-ocl{display:none}
 .help_box .jstree-default .jstree-leaf .jstree-anchor{padding-left:0}
 .help_box .jstree-container-ul > .jstree-node{/* padding-top:31px */}
 .help_box .jstree-container-ul > .jstree-node:first-child{padding-top:0}
 .help_box .jstree-container-ul > .jstree-node > .jstree-anchor{font-weight:bold;font-size:15px}
 .help_box .jstree-container-ul .jstree-children{padding-bottom:23px}
+
+/* Error */
+body.error{background-color:#e9e9eb}
+.error_msg_box{position:absolute;left:50%;top:50%;margin:-165px 0 0 -270px;width:540px;height:330px;background-color:#fff}
+.error_msg_box .inner{height:256px;padding:72px 77px 0;border:1px solid #acacac;text-align:center}
+.error_msg_box i{display:inline-block;width:86px;height:67px;margin:0 auto;vertical-align:middle;background-repeat:no-repeat;background-position:left top}
+.error_msg_box i.ico_error{background-image:url(/resource_bp/images/common/error.png)}
+.error_msg_box i.ico_author{background-image:url(/resource_bp/images/common/authority.png)}
+.error_msg_box .desc{padding:23px 0 0}
+.error_msg_box strong{font-weight:normal;font-size:25px;line-height:29px;color:#333;border-bottom:1px solid #333}
+.error_msg_box strong + p{margin-top:23px}
+.error_msg_box p{font-size:14px;line-height:24px}
+.error_msg_box p span{color:#ff3b57}
 
 @media all and (max-width:1217px){
 	input, select, textarea{border-radius:0;-webkit-appearance:none}
