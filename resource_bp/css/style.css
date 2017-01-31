@@ -392,13 +392,13 @@ textarea{border:1px solid #b3b3b3}
 /* 도움말 */
 .help_box .jstree-default{letter-spacing:-0.05em}
 .help_box .jstree-default .jstree-anchor{color:#333}
-.help_box .jstree-default .jstree-anchor.jstree-clicked{color:#ff3b57}
+.help_box .jstree-default .jstree-anchor.jstree-clicked{font-weight:bold;color:#ff3b57}
 .help_box .jstree-default .jstree-leaf > .jstree-ocl{display:none}
 .help_box .jstree-default .jstree-leaf .jstree-anchor{padding-left:0}
 .help_box .jstree-container-ul > .jstree-node{/* padding-top:31px */}
 .help_box .jstree-container-ul > .jstree-node:first-child{padding-top:0}
 .help_box .jstree-container-ul > .jstree-node > .jstree-anchor{font-weight:bold;font-size:15px}
-.help_box .jstree-container-ul .jstree-children{padding-bottom:23px}
+.help_box .jstree-container-ul .jstree-children{padding-bottom:13px}
 
 /* Error */
 body.error{background-color:#e9e9eb}
