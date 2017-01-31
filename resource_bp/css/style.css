@@ -274,7 +274,7 @@ textarea{border:1px solid #b3b3b3}
 .main_task ul li a.collateral:before{background-position:-318px 0}
 /* 활성 */
 .main_task ul li.on a, .main_task ul li a:hover{margin:0;height:166px;padding-top:50px;border-color:#ff3b57;color:#ff3b57;font-size:19px;box-shadow:10px 10px 10px rgba(0,0,0,0.15)}
-.main_task ul li.disable a, .main_task ul li.disable a:hover{margin:10px 0;padding-top:40px;width:186px;height:156px;color:#bababa;border:2px solid #c9c9c9;background-color:#fff;border-radius:5px;font-weight:bold;font-size:17px;line-height:24px;letter-spacing:-0.12em;box-shadow:3px 3px 5px rgba(0,0,0,0.1)}
+.main_task ul li.disable a, .main_task ul li.disable a:hover{margin:10px 0;padding-top:40px;width:186px;height:156px;color:#bababa;border:2px solid #c9c9c9;background-color:#fff;border-radius:5px;font-weight:bold;font-size:17px;line-height:24px;letter-spacing:-0.12em;box-shadow:3px 3px 5px rgba(0,0,0,0.1);cursor:default}
 .main_task ul li.on a:before, .main_task ul li a:hover:before{margin-bottom:12px}
 .main_task ul li.on a.application:before, .main_task ul li a.application:hover:before{background-position:0 -81px}
 .main_task ul li.on a.progress:before, .main_task ul li a.progress:hover:before{background-position:-106px -81px}
